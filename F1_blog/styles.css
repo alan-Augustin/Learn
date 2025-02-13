@@ -1,0 +1,46 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.f1-logo{
+ margin-top: 15px;
+ width: 100px;
+ height: 30px;
+}
+ nav,a{
+    font-family: ampleNu;
+    text-decoration: none;
+    background-color:#e10600 ;
+    color : #f6f4f0;
+    padding: 20px
+
+}
+a:hover{
+    background-color: #15151e;
+}
+h1{
+    font-family: formula-bold;
+}
+#track-cars{
+    max-width: 100%;
+}
+.side-section{
+    padding: 1%;
+}
+.section-card{
+    max-width: 50%;
+   border-style:solid;
+   border-width: 8px 8px 0 0;
+   border-color: #e00400;
+   border-radius: 0px 30px 0px 0px;
+   padding: 1%;
+}
+@font-face {
+    font-family: ampleNu;
+    src: url(public/fonts/DoppioOne-Regular.ttf);
+    font-family: formula-bold;
+    src: url(public/fonts/Formula1-Bold_web_0.ttf);
+}
