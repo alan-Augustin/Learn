@@ -56,15 +56,6 @@ body{
     background-color:#f6f4f0;
     color:#15151e ;
 }
-@font-face {
-   font-family: formula-bold;
-    src: url(public/fonts/Formula1-Bold_web_0.ttf);
-}
-@font-face{
-     font-family: ampleNu;
-    src: url(public/fonts/DoppioOne-Regular.ttf);
-}
-
 /* Navigation bar */
 .nav-container{
  display: flex;
