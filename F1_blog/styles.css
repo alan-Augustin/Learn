@@ -81,7 +81,22 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 15px;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    
+}
+.news{
+    font-family: 'titillium-web-bold';
+    color:#e10600;  
+    font-size:xx-small;
+    padding-top: 1em;
+}
+.card-items{
+    font-family: 'titillium-web-extralight';
+    font-size: small;
+    line-height: 1rem;
 }
 
 @media(max-width:768px){
