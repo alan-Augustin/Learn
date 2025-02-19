@@ -1,58 +1,15 @@
 @font-face {
-    font-family: formula-bold;
+    font-family: 'formula-bold';
      src: url(public/fonts/Formula1-Bold_web_0.ttf);
  }
  @font-face{
-      font-family: ampleNu;
+      font-family: 'ampleNu';
      src: url(public/fonts/DoppioOne-Regular.ttf);
  }
-*,
-*::before,
-*::after{ 
-    box-sizing: border-box; 
-}
-html{
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-}
-body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{
-    margin-block-end: 0;
-}
-ul[role='list'],ol[role='list']{
-    list-style: none;
-}
-body{
-    min-height: 100vh;
-    line-height: 1.5;
-}
-h1,h2,h3,h4,button,input,label{
-    line-height: 1.1;
-}
-h1,h2,h3,h4{
-    text-wrap: balance;
-}
-a:not([class]){
-    text-decoration-skip-ink: auto;
-    color: currentColor;
-}
-img,picture{
-    max-width: 100%;
-    display: block;
-}
-input, button, textarea,select{
-    font-family: inherit;
-    font-size: inherit;
-}
-textarea:not([rows]){
-    min-height: 10em;
-}
-:target{
-    scroll-margin-block: 5ex;
-}
+
 
 body{
-    font-family: 'ampleNu' sans-serif;
+    font-family: 'ampleNu' ,sans-serif;
     background-color:#f6f4f0;
     color:#15151e ;
 }
@@ -67,16 +24,15 @@ body{
 
 
 }
+
 .nav-list{
     display: flex;
-    list-style: none;
     gap: 10px;
 }
 .nav-list a{
     font-family: 'ampleNu',sans-serif;
     text-decoration: none;
     color: #f6f4f0;
-    padding: 30px 20px;
     transition: background 0.3s ease-in-out;
 }
 .f1-logo{
@@ -93,7 +49,11 @@ h1{
     margin-bottom: 10px;
     
 } 
-.section-card{
+.hero-section{
+    display: flex;
+}
+.news-headline{
+    flex: 2;
     max-width: 600px;
     margin-top: 1rem;
    border: 8px solid #e00400;
@@ -116,6 +76,13 @@ h1{
     transform: scale(1.1);
     overflow: hidden;
 }
+.news-cards{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+}
 
 @media(max-width:768px){
     .nav-container{
@@ -127,7 +94,7 @@ h1{
         flex-direction: column;
         gap: 10px;
     }
-    .section-card{
-        max-width: 90%;
+    .news-headline{
+        max-width: 50%;
     }
 }
