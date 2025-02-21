@@ -24,7 +24,6 @@ body{
 
 
 }
-
 .nav-list{
     display: flex;
     gap: 10px;
@@ -34,6 +33,11 @@ body{
     text-decoration: none;
     color: #f6f4f0;
     transition: background 0.3s ease-in-out;
+}
+.nav-list a{
+    padding: 30px 0px;
+    overflow: hidden;
+    
 }
 .f1-logo{
  height: 2.3em;
@@ -63,6 +67,7 @@ h1{
    padding: 1%;
    background: #f6f4f0;
    box-shadow: 0 4px 10px rgba(56, 54, 54, 0.1);
+   letter-spacing: 0.05em
 }
 
 .img-container{
@@ -98,7 +103,34 @@ h1{
     font-family: 'titillium-web-extralight';
     font-size: small;
     line-height: 1rem;
+    box-shadow: 0 4px 10px rgba(56, 54, 54, 0.1);
 }
+.card-items:hover{
+    transform: scale(1.1);
+    overflow:hidden;
+    transition: transform 0.1s ease-in-out;
+}   
+.f1-card{
+    position: relative;
+    letter-spacing: 0.01em;
+    margin-top: 1rem;
+    display: flex;
+    padding: 0 10px;
+    border: 8px solid #581c87;
+    border-radius: 0px 30px 30px 0px;
+    border-width: 8px 8px 8px 0px;
+
+    
+}
+.f1-card img{
+    
+    border-radius: 10px;
+    margin:0;
+    padding: 0;
+    background-color: #581c87;
+
+}
+
 
 @media(max-width:768px){
     .nav-container{
@@ -112,5 +144,8 @@ h1{
     }
     .news-headline{
         max-width: 50%;
+    }
+    .fl-card{
+        flex-direction: row;
     }
 }
