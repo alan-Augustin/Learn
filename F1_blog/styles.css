@@ -51,6 +51,7 @@ h1{
 } 
 .hero-section{
     display: flex;
+    padding: 0 10em;
 }
 .news-headline{
     flex: 2;
